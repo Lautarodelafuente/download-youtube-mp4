@@ -42,7 +42,6 @@ def descargar_videos_playlist(url, output_path = 'C:/Users/lautaro.delafuente/Do
             print(f'ERROR!! El Video {yt.title} no pudo descargarse, probamos con el siguiente.')
         else:
             stream = yt.streams.filter(progressive=True,file_extension='mp4').order_by('resolution').desc().first().download(output_path=output_path)
-            #stream.download(output_path=output_path)
             print(f'El video {yt.title} fue descargado a las {tiempo}!')
     
     print('Descarga terminada')
