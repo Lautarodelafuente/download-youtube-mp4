@@ -32,9 +32,6 @@ def descargar_videos_playlist(url, output_path = 'C:/Users/lautaro.delafuente/Do
 
     print(f'Downloading: {playlist.title}')   
 
-    now = datetime.now()
-    tiempo = now.strftime('%Y-%m-%d %H.%M.%S_') 
-
     for video in tqdm(videos):
         now = datetime.now()
         tiempo = now.strftime('%Y-%m-%d %H.%M.%S_')
@@ -51,7 +48,7 @@ def descargar_videos_playlist(url, output_path = 'C:/Users/lautaro.delafuente/Do
     print('Descarga terminada')
 
 
-#descargar_videos_playlist('https://www.youtube.com/playlist?list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y',"C:/Users/lautaro.delafuente/Downloads/Codo a codo/Clases_grabadas")
+#descargar_videos_playlist('','')
 
-#videos_separados('https://www.youtube.com/watch?v=18tKf7mdOyw&list=PLabnTUPlhTJ7U277TB_8orV7RRIMy0X6Y&index=43')
+#videos_separados('')
 
